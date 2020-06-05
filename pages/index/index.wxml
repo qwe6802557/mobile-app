@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <van-button bindtap="enterHome" class="to-home" icon="home-o">进入导购端</van-button>
+  <van-button bindtap="enterAdmin"  class="to-home" icon="friends-o">进入管理端</van-button>
+  <van-overlay show="{{show}}">
+    <van-loading size="24px" color="#1989fa">加载中...</van-loading>
+  </van-overlay>
+</view>

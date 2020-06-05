@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "北京科摩斯科技",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "../../dist/button/index",
+    "van-overlay": "../../dist/overlay/index",
+    "van-loading": "../../dist/loading/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
